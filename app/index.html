@@ -7,6 +7,52 @@
     <title>Compare Movies</title>
   </head>
   <body>
+    <main>
+      <h1>2023's Top Domestic Movies</h1>
+      <form aria-labelledby="movie-form">
+        <h2>Movies</h2>
+
+        <div class="title-input">
+          <label for="title">Movie Title:</label>
+          <input type="text" name="title" required />
+        </div>
+
+        <div class="critic-input">
+          <label for="critic">Critic Score:</label>
+          <input type="number" name="critic" required />
+        </div>
+
+        <div class="audience-input">
+          <label for="audience">Audience Score:</label>
+          <input type="number" name="audience" required />
+        </div>
+
+        <div class="domestic-input">
+          <label for="domestic">Domestic Gross Sales:</label>
+          <input type="number" name="domestic" required />
+        </div>
+
+        <div class="movie-genre-input">
+          <label for="genre">Genre:</label>
+          <select name="genre" id="movie-genre" required>
+            <option value="">Select a genre</option>
+            <option value="action">Action</option>
+            <option value="adventure">Adventure</option>
+            <option value="comedy">Comedy</option>
+            <option value="drama">Drama</option>
+            <option value="horror">Horror</option>
+            <option value="concert">Concert</option>
+            <option value="documentary">Documentary</option>
+            <option value="musical">Musical</option>
+            <option value="romance">Romance</option>
+            <option value="sci-fi">Sci-Fi</option>
+            <option value="thriller">Thriller</option>
+          </select>
+          <button type="submit">Add Movie</button>
+        </div>
+      </form>
+      <ul class="movies-list"></ul>
+    </main>
     <script type="module" src="src/main.js"></script>
   </body>
 </html>
