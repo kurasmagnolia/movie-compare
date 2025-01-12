@@ -25,6 +25,12 @@ export const getMovies = () => {
   return storedMovies;
 };
 
+export const addMovie = (movie) => {
+  const movies = getMovies();
+  movies.push(movie);
+  setMovies(movies);
+};
+
 export const resetMovies = () => {
   setMovies(defaultMovies);
 };
