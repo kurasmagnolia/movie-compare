@@ -12,3 +12,26 @@ const getLocalStorageKey = (key) => {
     return null;
   }
 };
+
+export const setMovies = (newMovies) => {
+  setLocalStorageKey("movies", newMovies);
+};
+
+export const getMovies = () => {
+  const storedMovies = getLocalStorageKey("movies");
+  if (!storedMovies) {
+    return {};
+  }
+  return storedMovies;
+};
+
+export const resetMovies = () => {
+  setMovies(defaultMovies);
+};
+
+export const initMoviesIfEmpty = () => {
+  const storedMovies = getMovies();
+  if (!storedMovies || Object.keys(storedMovies) === 0) {
+    setMovies(defaultMovies);
+  }
+};
