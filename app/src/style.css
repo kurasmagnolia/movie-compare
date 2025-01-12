@@ -7,3 +7,10 @@
 body {
   background-color: #181818;
 }
+
+form {
+  background-color: #333333;
+  height: 200px;
+  width: 325px;
+  gap: 1.1rem !important;
+}

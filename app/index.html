@@ -10,32 +10,37 @@
     <main>
       <h1>2023's Top Domestic Movies</h1>
       <form aria-labelledby="movie-form">
-        <h2>Movies</h2>
+        <h2>Add Your Movie</h2>
 
+        <!-- Movie Title Input -->
         <div class="title-input">
           <label for="title">Movie Title:</label>
           <input type="text" name="title" required />
         </div>
 
+        <!-- Critic Score Input -->
         <div class="critic-input">
           <label for="critic">Critic Score:</label>
           <input type="number" name="critic" required />
         </div>
 
+        <!-- Audience Score Input -->
         <div class="audience-input">
           <label for="audience">Audience Score:</label>
           <input type="number" name="audience" required />
         </div>
 
+        <!-- Domestic Gross Sales Input -->
         <div class="domestic-input">
           <label for="domestic">Domestic Gross Sales:</label>
           <input type="number" name="domestic" required />
         </div>
 
+        <!-- Movie Genre Input -->
         <div class="movie-genre-input">
           <label for="genre">Genre:</label>
           <select name="genre" id="movie-genre" required>
-            <option value="">Select a genre</option>
+            <option value="" disabled selected>Select a genre</option>
             <option value="action">Action</option>
             <option value="adventure">Adventure</option>
             <option value="comedy">Comedy</option>
